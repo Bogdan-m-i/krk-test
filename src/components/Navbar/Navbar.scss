@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  align-items: center;
+  background: $dark;
+
+  &__logo {
+    img {
+      width: 114px;
+      height: 55px;
+    }
+  }
+}

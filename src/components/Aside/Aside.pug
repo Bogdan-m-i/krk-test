@@ -1,0 +1,24 @@
+mixin Aside()
+
+    ul.accordion
+
+        - for (let i = 0; i < 5; i++)
+        if i < 3
+            li.accordion__item
+                a(href="#").accordion__head
+                    .accordion__head-content
+                        .accordion__head-text Меню #{i}
+
+        else
+            li.accordion__item
+                .accordion__head
+                    .accordion__head-content
+                        .accordion__head-text Меню #{i}
+                    .accordion__icon
+                        +icon('arrow-down')
+                .accordion__body
+                    .accordion__body-content
+                        a(href="#") Подменю 1
+                        a(href="#") Подменю 2
+                        a(href="#") Подменю 3
+                        a(href="#") Подменю 4

@@ -1,0 +1,19 @@
+.profile {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: $white;
+
+  &__name {
+    font-weight: 700;
+  }
+
+  &__img {
+    img {
+      width: 55px;
+      height: 55px;
+      border-radius: 55px;
+      overflow: hidden;
+    }
+  }
+}

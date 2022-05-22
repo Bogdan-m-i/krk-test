@@ -1,0 +1,12 @@
+mixin TaskList()
+
+    .task-list
+        .task-list__filter
+            input(type="text" name="taskFilter" placeholder="Фильтр").input#taskFilter
+        .task-list__items
+            .task-list__item
+                +Task({ title: 'Title 1', date: '22.05.2022', text: 'Lorem ipsum dolor sit amet' })
+            .task-list__item
+                +Task({ title: 'Title 2', date: '22.05.2022', text: 'consectetur adipisicing elit' })
+            .task-list__item
+                +Task({ title: 'Title 3', date: '22.05.2022', text: 'Amet consequatur dignissimos dolores' })

@@ -1,0 +1,43 @@
+button {
+  cursor: pointer;
+}
+
+.btn {
+  border: 1px solid transparent;
+  padding: 1.025rem 1.5rem;
+  transition: color .15s ease-in-out,background .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  user-select: none;
+
+  &_primary {
+    background-color: #78c215;
+    border-color: #78c215;
+    color: $white;
+
+    &:hover {
+      background-color: #639f11;
+      border-color: #5c9410;
+    }
+  }
+
+  &_secondary {
+    background-color: #fff;
+    border-color: #78c215;
+    border-width: 2px;
+    color: #444;
+
+    &:hover {
+      background-color: #78c215;
+      border-color: #78c215;
+      color: $white;
+    }
+  }
+
+  &_block {
+    display: block;
+    width: 100%;
+  }
+
+  &_sm {
+    padding: .75rem .5rem;
+  }
+}

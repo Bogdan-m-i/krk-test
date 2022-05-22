@@ -1,0 +1,14 @@
+.table {
+  width: 100%;
+
+  td, th {
+    text-align: left;
+  }
+
+  tr {
+    transition: $transition background-color;
+    &:hover {
+      background: $light;
+    }
+  }
+}

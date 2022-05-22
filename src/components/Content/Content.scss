@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  &__row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+
+    &-name {
+      font-weight: bold;
+    }
+  }
+
+  &__table {
+    margin-bottom: 24px;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 16px;
+  }
+}

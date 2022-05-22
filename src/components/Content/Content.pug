@@ -1,0 +1,25 @@
+mixin Content()
+    .content
+        .content__title Title
+        .content__info
+            .content__row
+                .content__row-name text 1
+                .content__row-val val 1
+            .content__row
+                .content__row-name text 2
+                .content__row-val val 2
+        .content__table
+            table.table
+                thead
+                    tr
+                        - for (let i = 0; i < 8; i++)
+                            th th #{i}
+                - for (let i = 0; i < 10; i++)
+                    tr
+                        - for (let i = 0; i < 8; i++)
+                            td #{Math.floor(Math.random() * 99)}
+
+        .content__actions
+            button.btn.btn_secondary.btn_md action
+            button.btn.btn_secondary.btn_md action
+            button.btn.btn_secondary.btn_md action

@@ -1,0 +1,14 @@
+// -
+    props {
+        title
+        date
+        text
+    }
+
+mixin Task(props = {})
+
+    .task
+        .task__header
+            .task__title #{props.title}
+            .task__date #{props.date}
+        .task__content #{props.text}
